@@ -1,0 +1,8 @@
+{
+  "name": "km.iOS",
+  "app_id": "4a042af8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
