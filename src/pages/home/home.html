@@ -15,4 +15,13 @@
   </p>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
+
+
+  <h2>My Ads</h2>
+  <ul>
+    <li *ngFor="let ad of ads">
+      <span>{{ad.title}}</span>
+    </li>
+  </ul>
+
 </ion-content>
