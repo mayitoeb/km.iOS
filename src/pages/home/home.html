@@ -7,8 +7,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Anuncios</h3>
+<ion-content>
   <ion-list>
     <ion-item *ngFor="let ad of ads">
       <ion-thumbnail item-start>
@@ -16,8 +15,6 @@
       </ion-thumbnail>
       <h2>{{ad.title}}</h2>
       <p>{{ad.subtitle}}</p>
-      <button ion-button clear item-end>View</button>
     </ion-item>
   </ion-list>
-
 </ion-content>
