@@ -20,4 +20,9 @@ export class HomePage implements OnInit {
       this.ads = ads;
     })
   }
+
+  openPage() {
+    console.log('button clicked');
+    alert('clicked');
+  }
 }
