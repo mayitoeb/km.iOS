@@ -23,6 +23,5 @@ export class HomePage implements OnInit {
 
   openPage() {
     console.log('button clicked');
-    alert('clicked');
   }
 }
