@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
+
+import { AdPage }  from '../ad/ad';
 
 import { Ad } from '../../models/ad';
 import { AdService } from '../../services/ad.service';
@@ -8,7 +10,8 @@ import { AdService } from '../../services/ad.service';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-export class HomePage implements OnInit {
+export class HomePage implements OnInit {  
+  adPage: any = AdPage;
   ads: Ad[] = [];
 
   constructor(public navCtrl: NavController,
@@ -21,7 +24,7 @@ export class HomePage implements OnInit {
     })
   }
 
-  openPage() {
-    console.log('button clicked');
+  openPage(adId: string) {
+    this.navCtrl.push(this.adPage);
   }
 }
