@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { catchError, map, tap } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 
-import {Ad} from '../models/ad'
+import {Ad} from '../shared/ad.model'
 
 @Injectable()
 export class AdService {
